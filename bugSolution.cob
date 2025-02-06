@@ -1,0 +1,10 @@
+01  WS-AREA. 
+    05  WS-VAR PIC 9(5) VALUE 0. 
+    05  WS-ARRAY OCCURS 10 TIMES PIC 9(3). 
+
+       PROCEDURE DIVISION. 
+           PERFORM VARYING WS-INDEX FROM 1 BY 1 UNTIL WS-INDEX > 10 
+               ADD 10 TO WS-ARRAY (WS-INDEX) 
+           END-PERFORM. 
+           DISPLAY "Value of WS-ARRAY(1): " WS-ARRAY(1). 
+           STOP RUN.
