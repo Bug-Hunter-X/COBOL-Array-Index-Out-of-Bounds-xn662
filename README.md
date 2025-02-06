@@ -1,0 +1,1 @@
+This repository demonstrates a common error in COBOL programs: accessing array elements outside their defined bounds.  The `bug.cob` file shows the erroneous code, while `bugSolution.cob` provides the corrected version.  The error arises from attempting to access an array element using an index of 0, while COBOL arrays are 1-based.
